@@ -65,6 +65,7 @@ object Dependencies {
 
   val junitInterface = "com.novocode" % "junit-interface" % "0.11" % "test"
   val scalaMetaCore = "org.scalameta" % "scalameta_2.11" % "0.1.0-SNAPSHOT"
+  val scalaMetaInterpreter = "org.scalameta" %% "interpreter" % "0.1.0-SNAPSHOT"
 
 }
 
@@ -119,7 +120,8 @@ object DependencyGroups {
   ) ++ plexusContainer ++ lucene ++ aether ++ sisu ++ wagon
 
   val scalaMeta = Seq(
-    scalaMetaCore
+    scalaMetaCore,
+    scalaMetaInterpreter
   )
 
   val scalaCommunity = Seq(
