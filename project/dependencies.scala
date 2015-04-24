@@ -63,9 +63,10 @@ object Dependencies {
   val mavenIndexerCore = "org.apache.maven.indexer" % "indexer-core" % "6.0"
   val mavenModel = "org.apache.maven" % "maven-model" % "3.0.5"
 
+  val scalaMetaCore = "org.scalameta" % "scalameta_2.11" % "0.1.0-SNAPSHOT" withSources()
+  val scalaMetaInterpreter = "org.scalameta" %% "interpreter" % "0.1.0-SNAPSHOT" withSources()
+
   val junitInterface = "com.novocode" % "junit-interface" % "0.11" % "test"
-  val scalaMetaCore = "org.scalameta" % "scalameta_2.11" % "0.1.0-SNAPSHOT"
-  val scalaMetaInterpreter = "org.scalameta" %% "interpreter" % "0.1.0-SNAPSHOT"
 
 }
 
