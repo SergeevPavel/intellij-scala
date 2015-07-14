@@ -5,8 +5,9 @@ import Common._
 
 resolvers in ThisBuild ++=
   BintrayJetbrains.allResolvers :+
-  Resolver.typesafeIvyRepo("releases") :+
-    Resolver.sonatypeRepo("snapshots")
+  Resolver.typesafeIvyRepo("releases")
+
+resolvers in ThisBuild += Resolver.sonatypeRepo("snapshots")
 
 lazy val sdkDirectory = SettingKey[File]("sdk-directory", "Path to SDK directory where unmanagedJars and IDEA are located")
 
