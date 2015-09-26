@@ -710,6 +710,10 @@
                          displayName="Redundant Return" groupPath="Scala" groupName="General"
                          shortName="RemoveRedundantReturn" level="WARNING"
                          enabledByDefault="true" language="Scala"/>
+        <localInspection implementationClass="org.jetbrains.plugins.scala.codeInspection.incorrectReturnInspection.IncorrectReturnInspection"
+                         displayName="Incorrect Return" groupPath="Scala" groupName="General"
+                         shortName="RemoveRedundantReturn" level="WARNING"
+                         enabledByDefault="true" language="Scala"/>
         <localInspection implementationClass="org.jetbrains.plugins.scala.codeInspection.relativeImports.RelativeImportInspection"
                          displayName="Relative Import" groupPath="Scala" groupName="General"
                          shortName="RelativeImport" level="WARNING"
